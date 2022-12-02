@@ -20,3 +20,10 @@ def index(req, year):
 
 def main_page(req):
     return HttpResponse('Archive by years')
+
+
+def dict_arr(req):
+    dict_ = {}
+    for i in range(1, 16):
+        dict_[i] = i**2
+    return HttpResponse(str(dict_))
