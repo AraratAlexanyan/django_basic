@@ -4,6 +4,7 @@ from .views import *
 
 urlpatterns = [
     path('archive/', main_page),
-    path('archive/<int:year>/', index)
+    path('archive/<int:year>/', index),
+    path('dict/', dict_arr),
 
 ]
